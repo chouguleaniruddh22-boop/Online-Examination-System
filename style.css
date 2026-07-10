@@ -1,0 +1,399 @@
+/* =====================================
+   Online Examination System
+   style.css (Part 4A)
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* ================= Login Page ================= */
+
+.login-container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+    width:420px;
+    background:#ffffff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.login-box h1{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.login-box p{
+    text-align:center;
+    color:#666;
+    margin-bottom:20px;
+}
+
+.login-box label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:bold;
+}
+
+.login-box input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    outline:none;
+}
+
+.login-box input:focus{
+    border-color:#2563eb;
+}
+
+.login-box button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    background:#2563eb;
+    color:#fff;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.login-box button:hover{
+    background:#1d4ed8;
+}
+
+.demo{
+    margin-top:20px;
+    padding:15px;
+    background:#f2f2f2;
+    border-radius:6px;
+}
+
+/* ================= Header ================= */
+
+header{
+    background:#2563eb;
+    color:white;
+    padding:18px 35px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+header button{
+    background:#dc2626;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+header button:hover{
+    background:#b91c1c;
+}
+
+/* ================= Timer ================= */
+
+.timer{
+    background:#ffffff;
+    color:#2563eb;
+    padding:10px 15px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+/* ================= Main Layout ================= */
+
+.exam-container{
+    width:95%;
+    margin:25px auto;
+    display:grid;
+    grid-template-columns:3fr 1fr;
+    gap:25px;
+}
+
+/* ================= Question Box ================= */
+
+.question-box{
+    background:#ffffff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+}
+
+.question-box h2{
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.question-box h3{
+    margin-bottom:25px;
+    line-height:1.5;
+}
+
+/* ================= Options ================= */
+
+.options label{
+    display:block;
+    background:#f8f9fa;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    margin-bottom:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.options label:hover{
+    background:#e8f0fe;
+}
+
+.options input{
+    margin-right:10px;
+}
+
+/* ================= Buttons ================= */
+
+.buttons{
+    margin-top:25px;
+    display:flex;
+    gap:15px;
+}
+
+.buttons button{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    color:white;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.buttons button:nth-child(1){
+    background:#6b7280;
+}
+
+.buttons button:nth-child(2){
+    background:#2563eb;
+}
+
+.buttons button:nth-child(3){
+    background:#16a34a;
+}
+
+.buttons button:hover{
+    opacity:.9;
+}
+/* =====================================
+   Online Examination System
+   style.css (Part 4B)
+===================================== */
+
+/* ================= Navigation Panel ================= */
+
+.navigation{
+    background:#ffffff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+    height:fit-content;
+}
+
+.navigation h3{
+    color:#2563eb;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+#questionNav{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:10px;
+}
+
+#questionNav button{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+#questionNav button:hover{
+    background:#1d4ed8;
+}
+
+#questionNav .active{
+    background:#16a34a;
+}
+
+#questionNav .answered{
+    background:#f59e0b;
+}
+
+/* ================= Result Page ================= */
+
+.result-container{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.result-card{
+    width:600px;
+    background:#ffffff;
+    padding:35px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.result-card h1{
+    text-align:center;
+    color:#2563eb;
+}
+
+.result-card h2{
+    text-align:center;
+    margin:15px 0;
+}
+
+.result-card hr{
+    margin:20px 0;
+}
+
+.result-card p{
+    margin:12px 0;
+    font-size:17px;
+}
+
+.result-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+
+.result-buttons button{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    color:white;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.result-buttons button:nth-child(1){
+    background:#2563eb;
+}
+
+.result-buttons button:nth-child(2){
+    background:#16a34a;
+}
+
+.result-buttons button:nth-child(3){
+    background:#dc2626;
+}
+
+.result-buttons button:hover{
+    opacity:.9;
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:900px){
+
+.exam-container{
+    grid-template-columns:1fr;
+}
+
+.navigation{
+    order:-1;
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+}
+
+.header-right{
+    flex-direction:column;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+.result-buttons{
+    flex-direction:column;
+}
+
+.login-box{
+    width:95%;
+}
+
+.result-card{
+    width:100%;
+}
+
+#questionNav{
+    grid-template-columns:repeat(4,1fr);
+}
+
+}
+
+@media(max-width:480px){
+
+.question-box{
+    padding:20px;
+}
+
+#questionNav{
+    grid-template-columns:repeat(3,1fr);
+}
+
+#questionNav button{
+    width:40px;
+    height:40px;
+}
+
+.timer{
+    width:100%;
+    text-align:center;
+}
+
+}

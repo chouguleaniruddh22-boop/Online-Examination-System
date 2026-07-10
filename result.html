@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Result</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="result-container">
+
+    <div class="result-card">
+
+        <h1>Online Examination System</h1>
+
+        <h2>Exam Result</h2>
+
+        <hr>
+
+        <p>
+            <strong>Student Name :</strong>
+            <span id="student"></span>
+        </p>
+
+        <p>
+            <strong>Total Questions :</strong>
+            <span id="totalQuestions"></span>
+        </p>
+
+        <p>
+            <strong>Correct Answers :</strong>
+            <span id="correctAnswers"></span>
+        </p>
+
+        <p>
+            <strong>Wrong Answers :</strong>
+            <span id="wrongAnswers"></span>
+        </p>
+
+        <p>
+            <strong>Score :</strong>
+            <span id="score"></span>
+        </p>
+
+        <p>
+            <strong>Percentage :</strong>
+            <span id="percentage"></span>
+        </p>
+
+        <p>
+            <strong>Status :</strong>
+            <span id="status"></span>
+        </p>
+
+        <div class="result-buttons">
+
+            <button onclick="reviewAnswers()">
+                Review Answers
+            </button>
+
+            <button onclick="restartExam()">
+                Restart Exam
+            </button>
+
+            <button onclick="logout()">
+                Logout
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+
+// Display Result
+
+document.getElementById("student").innerHTML =
+localStorage.getItem("studentName") || "Student";
+
+document.getElementById("totalQuestions").innerHTML =
+localStorage.getItem("totalQuestions") || "10";
+
+document.getElementById("correctAnswers").innerHTML =
+localStorage.getItem("correct") || "0";
+
+document.getElementById("wrongAnswers").innerHTML =
+localStorage.getItem("wrong") || "0";
+
+document.getElementById("score").innerHTML =
+localStorage.getItem("score") || "0";
+
+document.getElementById("percentage").innerHTML =
+localStorage.getItem("percentage") + "%" || "0%";
+
+document.getElementById("status").innerHTML =
+localStorage.getItem("status") || "Fail";
+
+</script>
+
+</body>
+</html>
